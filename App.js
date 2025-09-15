@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import ManageExpense from './screens/ManageExpense';
-import RecentExpmse from './screens/RecentExpmse';
+import RecentExpense from './screens/RecentExpence';
 import AllExpense from './screens/AllExpense';
 import { GlobalStyles } from './constants/styles';
 
@@ -24,7 +24,7 @@ const ExpenseOverview = () => {
     >
       <BottonTabs.Screen
         name='RecentExpense'
-        component={RecentExpmse}
+        component={RecentExpense}
         options={{
           title: 'Recent Expenses',
           tabBarLabel: 'Recent',
